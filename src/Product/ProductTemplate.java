@@ -26,4 +26,8 @@ public class ProductTemplate {
         this.songName = songName;
     }
 
+    public void printProductInfo() {
+        System.out.println("Song Name: " + this.getSongName() + " " + "Price: $" + this.getPrice() + " AUD");
+    }
 }
+

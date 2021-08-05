@@ -1,3 +1,4 @@
+import Product.ProductTemplate;
 import Product.Products;
 
 import java.util.Scanner;
@@ -6,9 +7,16 @@ public class App {
     public static void main(String[] args) {
         System.out.println("Welcome to the noise hole");
         System.out.println("Menu items include: ");
-        System.out.println("Song Name: " + Products.Glitches.getSongName() + " " + "Price: $" + Products.Glitches.getPrice()+ " AUD");
-        System.out.println("Song Name " + Products.NYCompression.getSongName() + " " + "Price: $" + Products.NYCompression.getPrice() +" AUD");
-        System.out.println("Song Name: " + Products.BadMood.getSongName() + " " + "Price: $" + Products.NYCompression.getPrice() + " AUD");
+
+
+        for (ProductTemplate productTemplate : Products.productList) {
+            productTemplate.printProductInfo();
+        }
+
+        //System.out.println("Song Name: " + Products.Glitches.getSongName() + " " + "Price: $" + Products.Glitches.getPrice()+ " AUD");
+        //System.out.println("Song Name " + Products.NYCompression.getSongName() + " " + "Price: $" + Products.NYCompression.getPrice() +" AUD");
+        //System.out.println("Song Name: " + Products.BadMood.getSongName() + " " + "Price: $" + Products.NYCompression.getPrice() + " AUD");
+
 
         Scanner input = new Scanner(System.in);
         String purchaseInput = "";
@@ -17,7 +25,7 @@ public class App {
             System.out.println("Please enter the NAME of the song you want to purchase: ");
             purchaseInput = input.next();
 
-            if (purchaseInput.equalsIgnoreCase("Glitches") || purchaseInput.equalsIgnoreCase("NYCompression") || purchaseInput.equalsIgnoreCase("Bad Mood")) {
+            if (purchaseInput.equalsIgnoreCase(Products.Glitches.getSongName())) {
                 break;
 
             } else {
@@ -27,5 +35,8 @@ public class App {
             System.out.println("You have selected: " + purchaseInput);
             input.close();
 
+            if(purchaseInput.equalsIgnoreCase(Products.Glitches.songName)) {
+                System.out.println(Products.Glitches.getPrice());
+            }
     }
 }

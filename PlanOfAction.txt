@@ -2,3 +2,5 @@ Menu with items/prices display -> Enable user to select an item -> has option fo
 - List of items                   - Barebones selection menu        - Appears after selecting an item       - Menu needs to reflect actual input
 - items need price                - Select multiple items(checkbox)                                         - Has email input for delivery of service
 - items need name
+
+
