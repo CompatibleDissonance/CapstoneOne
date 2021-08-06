@@ -1,5 +1,6 @@
 import Product.ProductTemplate;
 import Product.Products;
+import menu.MenuSelect;
 
 import java.util.Collections;
 import java.util.Scanner;
@@ -20,13 +21,13 @@ public class App {
 
 
         Scanner input = new Scanner(System.in);
-        String purchaseInput = null;
+        String purchaseInput = "";
 
         while (true) {
             System.out.println("Please enter the NAME of the song you want to purchase: ");
             purchaseInput = input.nextLine();
 
-            if (Products.productList.equals(purchaseInput)) {
+            if (MenuSelect.menuOrder.contains(purchaseInput)) {
                 break;
 
             } else {

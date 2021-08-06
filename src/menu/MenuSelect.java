@@ -1,13 +1,9 @@
 package menu;
 
-import Product.Products;
-import paymentUI.PersonalInformation;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
-import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-public class MenuSelect extends PersonalInformation {
-
-
+public class MenuSelect {
+    public static Set<String> menuOrder = new HashSet<String>(Arrays.asList("1", "2", "3", "4"));
 }
