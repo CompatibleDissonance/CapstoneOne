@@ -2,7 +2,7 @@ import Product.ProductTemplate;
 import Product.Products;
 import menu.MenuSelect;
 
-import java.util.Collections;
+
 import java.util.Scanner;
 
 public class App {
@@ -15,16 +15,11 @@ public class App {
             productTemplate.printProductInfo();
         }
 
-        //System.out.println("Song Name: " + Products.Glitches.getSongName() + " " + "Price: $" + Products.Glitches.getPrice()+ " AUD");
-        //System.out.println("Song Name " + Products.NYCompression.getSongName() + " " + "Price: $" + Products.NYCompression.getPrice() +" AUD");
-        //System.out.println("Song Name: " + Products.BadMood.getSongName() + " " + "Price: $" + Products.NYCompression.getPrice() + " AUD");
-
-
         Scanner input = new Scanner(System.in);
-        String purchaseInput = "";
+        String purchaseInput;
 
         while (true) {
-            System.out.println("Please enter the NAME of the song you want to purchase: ");
+            System.out.println("Please enter the number of the song you want to purchase: ");
             purchaseInput = input.nextLine();
 
             if (MenuSelect.menuOrder.contains(purchaseInput)) {
