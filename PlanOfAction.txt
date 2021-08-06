@@ -1,6 +1,6 @@
-Menu with items/prices display -> Enable user to select an item -> has option for checkout at the bottom -> At checkout menu has input for generic card -> Return to store option available
-- List of items                   - Barebones selection menu        - Appears after selecting an item       - Menu needs to reflect actual input
-- items need price                - Select multiple items(checkbox)                                         - Has email input for delivery of service
-- items need name
-
+Menu with items/prices display    ->    Enable user to select an item     ->     has option for checkout at the bottom    ->    At checkout menu has input for generic card    ->      Return to store option available
+- List of items                         - Bare-bones selection menu              - Appears after selecting an item              - Menu needs to reflect actual input
+- items need price                      - Select multiple items(checkbox)        - Command line opt-out                         - Has email input for delivery of service
+- items need name                       - Command line opt-out selection
+- items need number association         - Command line switch; for selection
 

@@ -27,9 +27,9 @@ public class App {
 
             } else {
                 System.out.println(purchaseInput + " Is not an available product");
-                   }
             }
-            System.out.println("You have selected: " + purchaseInput);
-            input.close();
+        }
+        System.out.println("You have selected: " + purchaseInput);
+        input.close();
     }
 }
