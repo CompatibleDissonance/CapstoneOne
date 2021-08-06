@@ -1,6 +1,7 @@
 import Product.ProductTemplate;
 import Product.Products;
 
+import java.util.Collections;
 import java.util.Scanner;
 
 public class App {
@@ -19,13 +20,13 @@ public class App {
 
 
         Scanner input = new Scanner(System.in);
-        String purchaseInput = "";
+        String purchaseInput = null;
 
         while (true) {
             System.out.println("Please enter the NAME of the song you want to purchase: ");
-            purchaseInput = input.next();
+            purchaseInput = input.nextLine();
 
-            if (purchaseInput.equalsIgnoreCase(Products.Glitches.getSongName())) {
+            if (Products.productList.equals(purchaseInput)) {
                 break;
 
             } else {
@@ -34,9 +35,5 @@ public class App {
             }
             System.out.println("You have selected: " + purchaseInput);
             input.close();
-
-            if(purchaseInput.equalsIgnoreCase(Products.Glitches.songName)) {
-                System.out.println(Products.Glitches.getPrice());
-            }
     }
 }
