@@ -29,5 +29,10 @@ public class ProductTemplate {
     public void printProductInfo() {
         System.out.println("Song Name: " + this.getSongName() + " " + "Price: $" + this.getPrice() + " AUD");
     }
+
+    public void printTotal() {
+        System.out.println("price total = $" + getPrice() + this.getPrice());
+    }
+
 }
 
