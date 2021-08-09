@@ -1,9 +1,33 @@
 package menu;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import Product.Products;
 
-public class MenuSelect {
-    public static Set<String> menuOrder = new HashSet<>(Arrays.asList("1", "2", "3", "4"));
+import java.util.Scanner;
+
+public class MenuSelect<purchaseInput> {
+    public static void addToCart() {
+        Scanner input = new Scanner(System.in);
+        int purchaseInput = input.nextInt();
+        switch (purchaseInput) {
+            case 1:
+                System.out.println(Products.Glitches.getSongName() + " added to cart");
+                break;
+
+            case 2:
+                System.out.println(Products.NYCompression.getSongName() + " added to cart");
+                break;
+
+            case 3:
+                System.out.println(Products.BadMood.getSongName() + " added to cart");
+                break;
+
+            case 4:
+                System.out.println(Products.Sleuth.getSongName() + " added to cart");
+                break;
+
+            default:
+                System.out.println(purchaseInput + " " + "Is an invalid selection");
+        }
+    }
+
 }
