@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class CheckOut {
     public static void CheckOut() {
         Scanner test = new Scanner(System.in);
+
         String str = test.nextLine();
 
         System.out.println("please enter your email: ");

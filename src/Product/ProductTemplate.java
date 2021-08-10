@@ -33,8 +33,5 @@ public class ProductTemplate {
     public void printTotal() {
         System.out.println("price total = $" + getPrice() + this.getPrice());
     }
-
-
-
 }
 

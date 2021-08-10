@@ -24,7 +24,6 @@ public class App {
         boolean toCheckout = input.equals(fourAMDream);
         boolean ordering = true;
         while (ordering) {
-            System.out.println("Please input the item number you wish to purchase: ");
             MenuSelect.addToCart();
             if (toCheckout) {
                 ordering = false;
