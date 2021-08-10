@@ -9,7 +9,7 @@ public class App {
 
     public static void main(String[] args) {
         // welcome message
-        System.out.println("Welcome to the noise hole");
+        System.out.println("Welcome to the Derelict Beat Cafe");
         System.out.println("Menu items include: ");
 
         // loop through the ArrayList items and print
