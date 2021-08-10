@@ -3,8 +3,6 @@ import Product.Products;
 import menu.MenuSelect;
 import paymentUI.CheckOut;
 
-
-import java.awt.*;
 import java.util.Scanner;
 
 public class App {
@@ -18,19 +16,22 @@ public class App {
             productTemplate.printProductInfo();
         }
 
-        Scanner input = new Scanner(System.in);
-        Scanner test = new Scanner(System.in);
-        var fourAMDream = new String("Checkout");
-        boolean toCheckout = input.equals(fourAMDream);
+        Scanner inputTwo = new Scanner(System.in);
+        String test = "No";
+
         boolean ordering = true;
         while (ordering) {
+            System.out.println("Please input the item number you wish to purchase: ");
             MenuSelect.addToCart();
-            if (toCheckout) {
+            System.out.println("Checkout yes no ");
+            test = inputTwo.next();
+            if (test.equalsIgnoreCase("Yes")) {
                 ordering = false;
                 CheckOut.CheckOut();
             } else {
-                MenuSelect.addToCart();
+                System.out.println("Returning to selection input");
             }
+
         }
 
     }

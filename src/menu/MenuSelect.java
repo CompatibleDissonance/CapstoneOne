@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class MenuSelect<purchaseInput> {
     public static void addToCart() {
         Scanner input = new Scanner(System.in);
-        System.out.println("Please input the item number you wish to purchase: ");
         int purchaseInput = input.nextInt();
 
         switch (purchaseInput) {
