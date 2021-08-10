@@ -7,8 +7,10 @@ import java.util.Scanner;
 public class MenuSelect<purchaseInput> {
     public static void addToCart() {
         Scanner input = new Scanner(System.in);
+        // user input scanner
         int purchaseInput = input.nextInt();
 
+        // switch statement for selections
         switch (purchaseInput) {
             case 1:
                 System.out.println(Products.Glitches.getSongName() + " added to cart");
