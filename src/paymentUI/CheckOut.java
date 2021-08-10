@@ -6,11 +6,9 @@ public class CheckOut {
     public static void CheckOut() {
         Scanner test = new Scanner(System.in);
 
-        String str = test.nextLine();
-
         System.out.println("please enter your email: ");
-
         String emailInput = test.next();
+
         System.out.println("Your order will be delivered to: " + emailInput);
 
         System.out.println("Please enter the following payment details!");

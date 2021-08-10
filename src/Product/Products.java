@@ -14,6 +14,4 @@ public class Products {
     public static List<ProductTemplate> productList = new ArrayList<>(List.of(
             Glitches, NYCompression, BadMood, Sleuth
     ));
-
-
 }

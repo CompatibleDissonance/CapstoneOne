@@ -24,7 +24,7 @@ public class App {
             System.out.println("Please input the item number you wish to purchase: ");
             MenuSelect.addToCart();
             System.out.println("Checkout yes no ");
-            test = inputTwo.next();
+            test = inputTwo.nextLine();
             if (test.equalsIgnoreCase("Yes")) {
                 ordering = false;
                 CheckOut.CheckOut();
