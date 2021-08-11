@@ -36,7 +36,10 @@ A for each loop is created to print items from the Products, and a printInfo met
 A branch is created from the main for the switch statement implementation/use which i decided to stay with for the final product.
 Next was the need for the checkout display and input which is in the CheckOut under paymentUI.
 From there I created a while loop in order to loop order inputs with an option to proceed to checkout.
+Two tests are created to check user input for the product order displaying correctly.
 Contained in the while loop is a boolean trigger that stops the loop if the user decides to check out. 
+At the end of creation the display messages, input names and redundant files are removed. 
+
 
 
 
