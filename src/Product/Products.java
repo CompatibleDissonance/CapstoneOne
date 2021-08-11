@@ -4,6 +4,8 @@ import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 // constructed products.
+
+
 public class Products {
     public static ProductTemplate Glitches = new ProductTemplate(22.50, "Glitches", "1");
     public static ProductTemplate NYCompression = new ProductTemplate(25.40, "NYCompression", "2");
@@ -14,4 +16,7 @@ public class Products {
     public static List<ProductTemplate> productList = new ArrayList<>(List.of(
             Glitches, NYCompression, BadMood, Sleuth
     ));
+
+
+
 }

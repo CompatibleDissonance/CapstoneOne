@@ -23,3 +23,20 @@ With the ease of access to music production software a lot of musicians can have
 2. User can input into command line for the song they want and decide if they want to proceed to checkout or choose a different song.
 
 3. User is greeted with the checkout screen that requires the input of their email for delivery of product and a mock card payment input for payment. 
+
+-------------------------------------------------------------
+
+**Implementation**
+The initial step of creating this application was brainstorming the general structure, as referenced in the PlanOfAction.txt
+
+the next portion was building the main which initially contained most of the code. From there i took into consideration
+the best way to approach the final product pivotal points being the use of an ArrayList and a switch statement.
+The Products and Products Template are created. 
+A for each loop is created to print items from the Products, and a printInfo method placed in the ProductTemplate that would show in the main.
+A branch is created from the main for the switch statement implementation/use which i decided to stay with for the final product.
+Next was the need for the checkout display and input which is in the CheckOut under paymentUI.
+From there I created a while loop in order to loop order inputs with an option to proceed to checkout.
+Contained in the while loop is a boolean trigger that stops the loop if the user decides to check out. 
+
+
+

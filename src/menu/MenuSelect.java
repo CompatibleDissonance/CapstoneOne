@@ -1,11 +1,14 @@
 package menu;
 
+import Product.ProductTemplate;
 import Product.Products;
 
 import java.util.Scanner;
 
 public class MenuSelect<purchaseInput> {
-    public static void addToCart() {
+
+    public static double addToCart() {
+        double total = 0;
         Scanner input = new Scanner(System.in);
         // user input scanner
         int purchaseInput = input.nextInt();
@@ -14,7 +17,7 @@ public class MenuSelect<purchaseInput> {
         switch (purchaseInput) {
             case 1:
                 System.out.println(Products.Glitches.getSongName() + " added to cart");
-                break;
+                return Products.Glitches.getPrice();
 
             case 2:
                 System.out.println(Products.NYCompression.getSongName() + " added to cart");
@@ -31,6 +34,7 @@ public class MenuSelect<purchaseInput> {
             default:
                 System.out.println(purchaseInput + " " + "Is an invalid selection");
         }
+        return total;
     }
 
 }

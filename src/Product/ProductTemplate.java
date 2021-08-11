@@ -34,7 +34,12 @@ public class ProductTemplate {
 
     // Prints the product information via the ArrayList in Products and then sent to App main for each loop.
     public void printProductInfo() {
-        System.out.println("Selection Number: " + getNumber() + " Song Name: " + this.getSongName() + " " + "Price: $" + this.getPrice() + " AUD");
+        System.out.println("Selection Number: " + this.getNumber() + " Song Name: " + this.getSongName() + " " + "Price: $" + this.getPrice() + " AUD");
+    }
+
+    public void total() {
+       double payTotal = 0 + this.getPrice();
+       System.out.println("total: " + payTotal);
     }
 }
 
